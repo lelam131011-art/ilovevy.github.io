@@ -1,0 +1,81 @@
+near infinite;
+  }
+
+  @keyframes swim {
+    0% { left: 10%; top: 50%; tran<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Trái Tim Cá</title>
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at center, #6dd5ed, #000c40);
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+  }
+
+  .heart-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    animation: beat 2s infinite;
+  }
+
+  /* Hiệu ứng tim đập */
+  @keyframes beat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+  }
+
+  /* Cá bơi */
+  .fish {
+    position: absolute;
+    width: 50px;
+    animation: swim 6s lisform: scaleX(1); }
+    50% { left: 70%; top: 40%; transform: scaleX(1); }
+    51% { transform: scaleX(-1); }
+    100% { left: 10%; top: 50%; transform: scaleX(-1); }
+  }
+
+  h1 {
+    position: absolute;
+    top: 20px;
+    color: white;
+  }
+
+</style>
+</head>
+<body>
+
+<h1>💙 Trái Tim Đại Dương</h1>
+
+<div class="heart-container">
+  <!-- Hình trái tim -->
+  <svg viewBox="0 0 32 29.6">
+    <path fill="#ff4b5c"
+      d="M23.6,0c-3.4,0-6.4,2-7.6,5.1C14.8,2,11.8,0,8.4,0
+      C3.8,0,0,3.8,0,8.4c0,9.5,16,21.2,16,21.2s16-11.7,16-21.2
+      C32,3.8,28.2,0,23.6,0z"/>
+  </svg>
+
+  <!-- Cá bơi bên trong -->
+  <img class="fish" src="https://upload.wikimedia.org/wikipedia/commons/1/13/Clown_fish_in_the_Andaman_Coral_Reef.jpg">
+
+</div>
+
+<script>
+  // Hiệu ứng click đổi màu tim
+  const heart = document.querySelector("path");
+  heart.addEventListener("click", () => {
+    heart.style.fill = heart.style.fill === "pink" ? "#ff4b5c" : "pink";
+  });
+</script>
+
+</body>
+</html>
+
